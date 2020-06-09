@@ -13,7 +13,6 @@ let write = ()=>fs.writeFile('./output/'+outputName, data, function(err) {
 }); 
 let data=read()
 data = [...new Set(data.split('\n'))] // Removing duplicates
-console.log(data)
 if(process.argv.includes('-s')){
 	data=data.sort()
 }
